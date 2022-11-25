@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+*{  
+    scroll-behavior: smooth; 
+    padding: 0;
+    margin: 0;
+    font-family: 'GmarketSansMedium';
+    box-sizing: border-box;
+}
+
+/* 헤더영역 */
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#011638;
+    position: fixed; 
+}
+.logo img{
+    width: 80px;
+    position: absolute;
+    left:30px;
+    margin: 10px;
+}
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+   
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:yellow
+}
+#menu{
+    font: bold 16px;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+/*🎈확대해도 메뉴가 일정한 간격으로 길게있었으면 좋겠는데
+해결이 안됨*/
+#menu>ul>li{
+    float: left;
+    width: 140px;
+    position: relative;
+}
+/*메인영역*/
+
+
+.wrap1{
+    padding-top: 130px;
+    height: 1000px;
+    background: #fffFF3;
+}
+.wrap2{
+    padding-top: 100px;
+    height: 100%;
+    background:#e0e3da;
+}
+.wrap3{
+    padding-top: 100px;
+    height: 1000px;
+}
+.wrap4{
+    padding-top: 100px;
+    height: 1000px;
+    background:#e0e3da;
+}
+footer{
+    height: 100px;
+    background-color: gray;
+}
+
+/*프로필페이지*/
+.wrap1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.articlebox{
+    width: 500px;
+    height: 700px;
+    border: 1px solid rgb(80, 85, 151);
+    border-radius: 50px;
+    margin: 20px auto;
+    background-color:rgba(255, 243, 217, 0.185);
+    box-shadow:5px 5px 5px #d2c6da;
+}
+.profile{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;            
+    text-align: center;
+    margin: 20px 20px 0px 20px ;
+    /* border: 1px red solid; */
+}
+.pfimgbox{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto ;
+    box-shadow: 5px 5px 5px gray;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skill img{
+    width: 200px;
+}
+h3{
+    font-size: 30px; 
+    padding-bottom: 10px;         
+}
+h4{ 
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 200;
+}
+h5{ 
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+}
